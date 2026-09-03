@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Pink Monster Truck 3D</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="ui-layer">
+        <div id="score-board">Score: <span id="score">0</span></div>
+        <div id="health-bar">❤️ <span id="health">100</span>%</div>
+    </div>
+    <div id="controls">
+        <button id="btn-restart">🔄 Restart</button>
+    </div>
+    
+    <!-- Using ES modules for Three.js -->
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+        }
+      }
+    </script>
+    <script type="module" src="game.js"></script>
+</body>
+</html>
